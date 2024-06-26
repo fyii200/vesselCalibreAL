@@ -37,7 +37,7 @@ include   <- subset(d, remark=="" & OH=="good")
 exclude   <- subset(d, remark!="" | OH!="good")
 d$include <- TRUE
 d$include[which(d$remark!= "" | d$OH!="good")] <- FALSE
-chisq.test(table(d$sex, d$include), simulate.p.value=TRUE)             # sex distribution
+chisq.test(table(d$sex, d$include), simulate.p.value=TRUE)                # sex distribution
 t.test(subset(d, include==TRUE)$age, subset(d, include==FALSE)$age)       # mean age
 t.test(subset(d, include==TRUE)$SER, subset(d, include==FALSE)$SER)       # mean SER
 t.test(subset(d, include==TRUE)$meanAL, subset(d, include==FALSE)$meanAL) # mean AL
