@@ -1,0 +1,97 @@
+sex,age,ethnic,OH,remark,SER,CR,AL,CRAE_Knudtson_avg,CRVE_Knudtson_avg
+Male,21,White,good,,0,8.25,24.87666667,28.28,37.135
+Male,21,South Asian,good,,0.5,7.71,22.76666667,28.89,41.835
+Male,20,South Asian,good,,0.5,8.185,24.37,28.59,36.58
+Female,21,South Asian,good,,-4.125,7.49,24.42,27.42,36.91
+Female,25,White,good,,-6,7.985,27.33333333,20.845,32.73
+Female,20,White,good,,0,7.895,23.82666667,30.995,38.685
+Female,20,South Asian,good,,0.125,8.035,24.10666667,27.99,38.165
+Female,20,South Asian,good,,-6.25,7.385,25.01666667,27.615,34.525
+Female,19,South Asian,good,,1.75,7.53,21.39333333,29.495,37.525
+Male,25,White,good,,-1.75,7.75,24.23333333,22.295,29.25
+Female,19,South Asian,good,,-0.625,8.005,24.29666667,25.87,35.405
+Male,19,South Asian,good,,0.625,7.855,23.38,27.595,39.435
+Female,19,White,good,,-6.75,7.66,25.45333333,31.88,41.95
+Female,20,South Asian,good,,0.125,7.67,23.43666667,27.89,31.51
+Female,19,South Asian,good,,-1.875,7.8,24.03666667,24.93,32.875
+Female,19,South Asian,good,,0.875,7.545,22.30333333,30.6,37.16
+Female,19,South Asian,good,,-2.875,8.09,25.29,26,29.62
+Female,19,South Asian,good,,-0.625,7.925,23.48333333,27.695,41.175
+Female,19,White,ambloypia,,1.125,7.66,22.53333333,27.775,35.445
+Female,19,South Asian,good,,-0.25,7.71,22.77333333,32.435,47.095
+Female,19,White,good,,-1.125,7.47,22.93666667,28.23,39.055
+Female,18,White,good,,-2,7.57,24.24333333,27.965,35.755
+Female,17,South Asian,good,,0.25,7.805,22.61666667,27.465,35.445
+Male,18,South Asian,good,,-4.5,8.03,25.65,26.68,37.65
+Female,18,South Asian,good,,-0.75,7.955,24.12,27.91,32.85
+Female,18,South Asian,good,,-1.125,8.065,24.83666667,25.575,27.605
+Female,18,White,ambloypia,,0,8.265,24.54,25.185,33.055
+Female,17,White,good,,1.25,7.42,22.58666667,27.555,35.985
+Female,17,South Asian,good,,0.75,7.94,23.45,28.555,33.15
+Male,17,South Asian,keratoconus,,-2.375,7.83,24.08333333,26.27,34.765
+Female,18,South Asian,good,,0,7.49,22.74333333,24.985,30.925
+Female,18,Black,good,,-2.5,7.8,24.42333333,29.635,37.33
+Male,18,White,good,,4.375,8.095,22.55333333,29.055,39.425
+Female,18,White,good,,0.875,7.46,22.13666667,28.15,37.265
+Female,18,White,good,,1.75,7.795,22.34666667,27.065,34.09
+Female,18,White,good,,0.125,7.735,24.32666667,28.155,36.755
+Female,18,White,good,,-0.125,7.605,23.40666667,28.475,34.315
+Female,17,South Asian,strabismus,,5.375,7.76,20.93,30.71,41.595
+Male,18,White,good,,0.25,8.215,24.32333333,25.685,30.035
+Male,18,White,good,,0.75,7.98,23.91333333,26.88,33.875
+Female,17,South Asian,good,,-3,7.445,23.59333333,31.595,39.835
+Female,18,White,good,,1,8.045,23.04333,27.775,34.715
+Female,17,White,good,,-2.125,8.11,24.89,26.445,32.675
+Male,18,White,good,,0.375,8.065,23.67333333,23.26,32.495
+Female,18,South Asian,good,,-1.25,8.635,25.01333333,23.615,30.085
+Female,18,White,good,,0.5,8.095,24.13333333,26.57,35.69
+Female,18,White,good,,1,8.21,23.37666667,25.945,28.975
+Female,18,White,good,,0,7.48,22.82666667,26.145,34.36
+Male,19,South Asian,good,,0.75,8.035,23.19666667,26.615,34.295
+Male,18,South Asian,strabismus,,-6.625,7.415,25.22333333,24.14,32.335
+Female,18,South Asian,good,,0.625,7.865,22.81,26.265,32.605
+Female,18,South Asian,good,,-0.125,8.315,24.49666667,26.405,33.86
+Male,20,White,strabismus,,-0.875,8.01,24.33,27.155,35.555
+Female,18,White,good,diffuse chorioretinal atrophy (peripapillary),-1.625,7.705,24.11,30.835,32.31
+Female,17,White,good,,-2.75,7.58,24.00333333,29.825,37.965
+Female,18,White,strabismus,,-0.25,7.81,23.83666667,26.94,37.63
+Female,18,South Asian,good,,-3.5,8.09,24.85,27.845,34.755
+Female,18,White,good,,5.25,8.055,21.56333333,29.24,37.685
+Male,18,White,good,diffuse chorioretinal atrophy,NA,7.71,27.17333333,38.525,34.145
+Female,17,South Asian,good,,-1.625,7.73,24.07,26.655,33.96
+Male,18,White,good,,-3.625,7.67,24.36,26.85,30.765
+Male,18,White,good,,0.125,7.755,23.85333333,26.395,33.35
+Female,17,White,good,,0.375,8.34,23.8,26.205,31.125
+Female,18,South Asian,good,,0.5,7.94,23.74,25.11,35.565
+Female,18,White,good,,0.25,8.22,23.9,27.03,37.15
+Female,19,South Asian,good,,-0.875,7.82,23.72666667,26.64,34.19
+Male,18,South Asian,good,,0.875,7.855,23.21333333,24.67,35.22
+Female,18,South Asian,good,,0.125,7.725,23.49,25.715,31.57
+Male,19,South Asian,good,,0.25,8.63,24.74666667,24.75,31.43
+Female,19,White,good,,-0.125,7.97,23.71,26.605,35.395
+Male,25,White,ambloypia,,-0.25,7.64,23.13666667,28.66,37.255
+Male,18,South Asian,good,,-2.5,8.125,25.61666667,27.805,35.995
+Female,21,White,good,,6.25,7.615,20.65,30.245,42.08
+Female,18,White,good,,0.625,7.45,22.23,27.485,32.61
+Female,18,South Asian,good,,0.5,7.765,23.54,27.425,37.085
+Female,17,South Asian,good,,-4,8.11,26.06666667,29.83,36.065
+Female,31,White,good,,-6.63,0,25.88666667,25.765,31.49
+Female,19,White,good,,0.5,7.65,22.48333333,29.005,36.16
+Female,20,White,good,diffuse chorioretinal atrophy (peripapillary),-2.375,7.395,23.63333333,34.2,33.425
+Male,29,White,strabismus,,-3.125,8.065,25.87666667,24.18,30.27
+Female,18,White,good,,-4.375,7.65,24.83666667,26.4,36.35
+Female,21,South Asian,good,,0.125,7.765,22.89666667,26.545,38.02
+Female,20,White,good,,-1.375,7.73,23.85,25.515,35.855
+Female,17,White,good,,0.375,7.925,23.73,29.16,40.145
+Male,19,South Asian,good,,-0.875,8.055,23.97666667,31.33,39.09
+Female,18,East Asian,good,,0.25,7.87,23.88666667,27.805,34.855
+Female,22,White,good,,-3.375,7.77,25.02333,27.065,37.555
+Male,22,White,good,,-1.5,7.705,24.52333333,27.02,35.09
+Female,18,South Asian,good,,-7.25,6.945,24.02666667,28.4,36.465
+Female,19,East Asian,good,,-3.375,7.645,25.01,27.72,32.675
+Female,20,White,good,,-3.875,7.485,24.85,25.89,31.255
+Female,17,South Asian,good,,0.625,7.53,22.67,27.45,32.855
+Female,17,South Asian,good,,-0.625,8.08,24.21667,27.62,31.505
+Female,16,South Asian,good,,1,7.62,22.15,28.545,32.62
+Female,28,White,strabismus,,0.125,7.64,22.51,22.75,35.415
+Female,17,White,ambloypia,,7.125,7.975,20.98666667,33.85,53.075
