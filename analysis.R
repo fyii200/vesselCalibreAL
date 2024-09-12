@@ -1,5 +1,5 @@
 ################################################################################
-#                                  Fabian Yii                                  #
+#                                  Fabian SL Yii                               #
 #                               fabian.yii@ed.ac.uk                            #
 ################################################################################
 library(car)
@@ -12,7 +12,7 @@ rm(list=ls())
 ################################ Preprocessing #################################
 ################################################################################
 # Read data (96 right eyes of 96 participants)
-d <- read.csv("anonymisedData.csv")
+d <- read.csv("anonymisedDataForGitHub.csv")
 # Remove eyes with pathologic myopia (3 eyes had diffuse chorioretinal atrophy) 
 # 93 right eyes of 93 participants left
 GCU <- d[d$remark == "",]
@@ -28,7 +28,6 @@ include   <- subset(d, remark=="" & OH=="good")
 exclude   <- subset(d, remark!="" | OH!="good")
 d$include <- TRUE
 d$include[which(d$remark!= "" | d$OH!="good")] <- FALSE
-set.seed(50)
 chisq.test(table(d$sex, d$include), simulate.p.value=TRUE)                # sex distribution
 t.test(subset(d, include==TRUE)$age, subset(d, include==FALSE)$age)       # mean age
 t.test(subset(d, include==TRUE)$SER, subset(d, include==FALSE)$SER)       # mean SER
@@ -70,30 +69,30 @@ L1 <- function(calibre, SER, CR, telecentric){
 ################################# Regression ###################################
 ################################################################################
 ## Not corrected for magnification ##
-tab_model(lm(CRAE_Knudtson ~ AL + ethnicGroup + age + factor(sex), GCU))
-tab_model(lm(CRVE_Knudtson ~ AL + ethnicGroup + age + factor(sex), GCU))
+tab_model(lm(CRAE_Knudtson_avg ~ AL + ethnicGroup + age + factor(sex), GCU), digits=4)
+tab_model(lm(CRVE_Knudtson_avg ~ AL + ethnicGroup + age + factor(sex), GCU), digits=4)
 
 ## Magnification correction assuming non-telecentricity ##
 # Bennett, Rudnicka and Edgar
-tab_model(lm(BRE2(CRAE_Knudtson, AL, SER, FALSE) ~ AL + ethnicGroup + age + factor(sex), GCU))
-tab_model(lm(BRE2(CRVE_Knudtson, AL, SER, FALSE) ~ AL + ethnicGroup + age + factor(sex), GCU))
+tab_model(lm(BRE2(CRAE_Knudtson_avg, AL, SER, FALSE) ~ AL + ethnicGroup + age + factor(sex), GCU), digits=4)
+tab_model(lm(BRE2(CRVE_Knudtson_avg, AL, SER, FALSE) ~ AL + ethnicGroup + age + factor(sex), GCU), digits=4)
 # Bengtsson and Krakau
-tab_model(lm(BK2(CRAE_Knudtson, SER, FALSE) ~ AL + ethnicGroup + age + factor(sex), GCU))
-tab_model(lm(BK2(CRVE_Knudtson, SER, FALSE) ~ AL + ethnicGroup  + age + factor(sex), GCU))
+tab_model(lm(BK2(CRAE_Knudtson_avg, SER, FALSE) ~ AL + ethnicGroup + age + factor(sex), GCU), digits=4)
+tab_model(lm(BK2(CRVE_Knudtson_avg, SER, FALSE) ~ AL + ethnicGroup  + age + factor(sex), GCU), digits=4)
 # Littmann
-tab_model(lm(L1(CRAE_Knudtson, SER, CR, FALSE) ~ AL + ethnicGroup  + age + factor(sex), GCU))
-tab_model(lm(L1(CRVE_Knudtson, SER, CR, FALSE) ~ AL + ethnicGroup  + age + factor(sex), GCU))
+tab_model(lm(L1(CRAE_Knudtson_avg, SER, CR, FALSE) ~ AL + ethnicGroup  + age + factor(sex), GCU), digits=4)
+tab_model(lm(L1(CRVE_Knudtson_avg, SER, CR, FALSE) ~ AL + ethnicGroup  + age + factor(sex), GCU), digits=4)
 
 ## Magnification correction assuming telecentricity (inaccurate assumption) ##
 # Bennett, Rudnicka and Edgar
-tab_model(lm(BRE2(CRAE_Knudtson, AL, SER, TRUE) ~ AL + ethnicGroup + age + factor(sex), GCU))
-tab_model(lm(BRE2(CRVE_Knudtson, AL, SER, TRUE) ~ AL + ethnicGroup + age + factor(sex), GCU))
+tab_model(lm(BRE2(CRAE_Knudtson_avg, AL, SER, TRUE) ~ AL + ethnicGroup + age + factor(sex), GCU), digits=4)
+tab_model(lm(BRE2(CRVE_Knudtson_avg, AL, SER, TRUE) ~ AL + ethnicGroup + age + factor(sex), GCU), digits=4)
 # Bengtsson and Krakau
-tab_model(lm(BK2(CRAE_Knudtson, SER, TRUE) ~ AL + ethnicGroup + age + factor(sex), GCU))
-tab_model(lm(BK2(CRVE_Knudtson, SER, TRUE) ~ AL + ethnicGroup  + age + factor(sex), GCU))
+tab_model(lm(BK2(CRAE_Knudtson_avg, SER, TRUE) ~ AL + ethnicGroup + age + factor(sex), GCU), digits=4)
+tab_model(lm(BK2(CRVE_Knudtson_avg, SER, TRUE) ~ AL + ethnicGroup  + age + factor(sex), GCU), digits=4)
 # Littmann
-tab_model(lm(L1(CRAE_Knudtson, SER, CR, TRUE) ~ AL + ethnicGroup  + age + factor(sex), GCU))
-tab_model(lm(L1(CRVE_Knudtson, SER, CR, TRUE) ~ AL + ethnicGroup  + age + factor(sex), GCU))
+tab_model(lm(L1(CRAE_Knudtson_avg, SER, CR, TRUE) ~ AL + ethnicGroup  + age + factor(sex), GCU), digits=4)
+tab_model(lm(L1(CRVE_Knudtson_avg, SER, CR, TRUE) ~ AL + ethnicGroup  + age + factor(sex), GCU), digits=4)
 
 
 ################################################################################
@@ -118,8 +117,6 @@ ggplot(data=plotd, aes(x=x, y=y, group=Formula, col=Formula)) +
   geom_segment(x=22.5, y=7, xend=22.5, yend=11, col="gray", size=0.3,
                arrow = arrow(length = unit(0.5, "cm"))) +
   geom_text(x=24, y=9, size=3, col="gray20", label="Overestimation of 'q'")
-ggsave("figure2.tiff", width=5.5, height=4.5)
-
 
 
 
